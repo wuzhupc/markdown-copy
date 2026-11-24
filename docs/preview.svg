@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 720" width="1120" height="720" role="img" aria-label="markdown-copy 在 OpenCode TUI 中的消息选择器与 Markdown 源码面板">
+  <title>markdown-copy: pick a message, copy the exact Markdown you need</title>
+  <defs>
+    <linearGradient id="page" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0f17"/>
+      <stop offset="1" stop-color="#121a26"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="16" stdDeviation="22" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="1120" height="720" fill="url(#page)"/>
+
+  <!-- 终端窗口 -->
+  <rect x="40" y="36" width="1040" height="648" rx="14" fill="#0d1117" stroke="#30363d" filter="url(#shadow)"/>
+  <circle cx="64" cy="58" r="6" fill="#ff5f57"/>
+  <circle cx="84" cy="58" r="6" fill="#febc2e"/>
+  <circle cx="104" cy="58" r="6" fill="#28c840"/>
+  <text x="126" y="63" fill="#8b949e" font-family="'JetBrains Mono','Cascadia Mono',Consolas,monospace" font-size="14">opencode · markdown-copy</text>
+  <line x1="40" y1="80" x2="1080" y2="80" stroke="#21262d"/>
+
+  <!-- 消息选择器 -->
+  <rect x="64" y="96" width="992" height="196" rx="10" fill="#161b22" stroke="#30363d"/>
+  <text x="88" y="130" fill="#e6edf3" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="17" font-weight="600">查看消息 Markdown</text>
+  <text x="1032" y="130" text-anchor="end" fill="#6e7681" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="13">Esc 取消</text>
+
+  <rect x="88" y="146" width="944" height="34" rx="6" fill="#0d1117" stroke="#30363d"/>
+  <text x="102" y="168" fill="#6e7681" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="14">搜索消息…</text>
+  <rect x="188" y="152" width="2" height="22" fill="#58a6ff"/>
+
+  <rect x="88" y="192" width="944" height="42" rx="6" fill="#1f6feb" opacity="0.18"/>
+  <rect x="88" y="192" width="3" height="42" rx="1.5" fill="#58a6ff"/>
+  <text x="104" y="219" fill="#e6edf3" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="14">助手 · 14:32 · 用表格对比两种方案…</text>
+  <text x="1016" y="219" text-anchor="end" fill="#8b949e" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="13">812 字符</text>
+
+  <text x="104" y="258" fill="#8b949e" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="14">你 · 14:30 · 帮我比较一下这两种实现</text>
+  <text x="1016" y="258" text-anchor="end" fill="#8b949e" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="13">86 字符</text>
+
+  <!-- 源码面板 -->
+  <rect x="64" y="312" width="992" height="344" rx="10" fill="#0d1117" stroke="#30363d"/>
+  <text x="84" y="342" fill="#8b949e" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="13">助手 · 14:32 · 812 字符<tspan fill="#58a6ff"> · 已选 46 字符 · Alt+C 复制</tspan></text>
+  <text x="1036" y="342" text-anchor="end" fill="#6e7681" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="13">y 全文 · Esc 关闭</text>
+  <line x1="64" y1="358" x2="1056" y2="358" stroke="#21262d"/>
+
+  <rect x="76" y="400" width="504" height="104" rx="4" fill="#388bfd" opacity="0.16"/>
+  <rect x="76" y="400" width="3" height="104" rx="1.5" fill="#58a6ff" opacity="0.9"/>
+
+  <g font-family="'JetBrains Mono','Sarasa Mono SC','Microsoft YaHei Mono',Consolas,monospace" font-size="15">
+    <text x="84" y="388" fill="#79c0ff">## 方案对比</text>
+
+    <g fill="#6e7681">
+      <text x="84" y="418">|</text><text x="190" y="418">|</text><text x="380" y="418">|</text><text x="560" y="418">|</text>
+      <text x="84" y="443">|</text><text x="190" y="443">|</text><text x="380" y="443">|</text><text x="560" y="443">|</text>
+      <text x="84" y="468">|</text><text x="190" y="468">|</text><text x="380" y="468">|</text><text x="560" y="468">|</text>
+      <text x="84" y="493">|</text><text x="190" y="493">|</text><text x="380" y="493">|</text><text x="560" y="493">|</text>
+    </g>
+    <g fill="#d2a8ff">
+      <text x="96" y="418">方案</text><text x="202" y="418">优点</text><text x="392" y="418">缺点</text>
+    </g>
+    <g fill="#6e7681">
+      <text x="96" y="443">---</text><text x="202" y="443">---</text><text x="392" y="443">---</text>
+    </g>
+    <g fill="#c9d1d9">
+      <text x="96" y="468">A</text><text x="202" y="468">实现简单</text><text x="392" y="468">扩展性差</text>
+      <text x="96" y="493">B</text><text x="202" y="493">扩展性好</text><text x="392" y="493">成本高</text>
+    </g>
+
+    <text x="84" y="543" fill="#8b949e">```ts</text>
+    <text x="84" y="568" fill="#c9d1d9"><tspan fill="#ff7b72">const</tspan><tspan fill="#d2a8ff"> pick </tspan>= &lt;T&gt;(items: T[]) =&gt; items.at(-1)</text>
+    <text x="84" y="593" fill="#8b949e">```</text>
+    <text x="84" y="618" fill="#c9d1d9">推荐 <tspan fill="#7ee787" font-weight="700">B</tspan>：后续加字段不用改接口。</text>
+  </g>
+
+  <text x="560" y="710" text-anchor="middle" fill="#6e7681" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="13">选中的就是 Markdown 源码 —— 粘贴即带表格与代码围栏</text>
+</svg>

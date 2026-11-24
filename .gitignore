@@ -1,0 +1,13 @@
+dist/
+node_modules/
+*.log
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# editor
+.vscode/
+.idea/
+*.swp

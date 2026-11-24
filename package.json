@@ -1,0 +1,39 @@
+{
+  "name": "opencode-markdown-copy",
+  "version": "1.2.2",
+  "description": "OpenCode TUI plugin: open any session message as raw Markdown and copy exactly the fragment you need.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "author": "wuzhupc",
+  "homepage": "https://github.com/wuzhupc/markdown-copy#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuzhupc/markdown-copy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wuzhupc/markdown-copy/issues"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "tui",
+    "markdown",
+    "clipboard",
+    "copy"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "exports": {
+    "./tui": "./tui.ts"
+  },
+  "scripts": {
+    "test": "node tests/messages.test.mjs",
+    "test:clipboard": "node tests/clipboard.test.mjs",
+    "test:all": "node tests/messages.test.mjs && node tests/clipboard.test.mjs",
+    "check": "bun build ./tui.ts --target bun --jsx-runtime automatic --jsx-import-source @opentui/solid --external @opencode/plugin/tui --external @opentui/core --external @opentui/solid --external solid-js --outfile ./dist/check.js",
+    "deploy:win": "pwsh -File ./deploy.ps1",
+    "deploy:unix": "sh ./install.sh"
+  }
+}
